@@ -1,0 +1,296 @@
+/* dark_theme.css */
+
+/* General body and text colors */
+body {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Main content areas */
+.content, .page-header, .roundbox, .datatable, .topic-post, .comment, .footer {
+    background-color: #282828 !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+/* Ensure highlight-blue roundbox has a dark background for contrast */
+.roundbox.highlight-blue {
+    background-color: #282828 !important;
+}
+
+/* Links */
+a {
+    color: #8BC34A !important; /* Green link color */
+    text-decoration: underline !important; /* Make links more obvious */
+}
+
+a:hover {
+    color: #C5E1A5 !important; /* Brighter green for hover text */
+    background: #1B5E20 !important; /* Dark green hover background */
+}
+
+/* User decided to have visited and unvisited links be the same color for consistency. */
+a:visited {
+    color: #8BC34A !important; /* Same as unvisited links */
+}
+
+/* Problem statement readability */
+.problem-statement, .problem-statement *,
+.content p, .roundbox p, .topic-post p,
+.content li, .roundbox li, .topic-post li,
+.content strong, .roundbox strong, .topic-post strong,
+.content div, .topic-post div, .problem-statement div,
+.roundbox div, .roundbox .caption, .roundbox .caption * {
+    color: white !important; /* Ensure readable text color for general paragraphs, list items, strong text, and div text */
+}
+
+.problem-statement pre, .problem-statement code {
+    background-color: #333 !important;
+    color: #a9b7c6 !important;
+    border: 1px solid #555 !important;
+}
+
+/* Input fields and textareas */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555 !important;
+}
+
+/* Buttons */
+button, .submit, .button {
+    background-color: #444 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #666 !important;
+}
+
+button:hover, .submit:hover, .button:hover {
+    background-color: #555 !important;
+}
+
+/* Table headers and rows */
+th {
+    background-color: #3a3a3a !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+td {
+    background-color: #2e2e2e !important;
+    border-color: #444 !important;
+}
+
+/* Code blocks (if any are present on Codeforces) */
+pre, code {
+    background-color: #333 !important;
+    color: #a9b7c6 !important;
+    border: 1px solid #555 !important;
+}
+
+/* Specific override for <pre> with inline background-color for dark mode */
+pre[style*="background-color: #eff0f1;"],
+pre[style*="background-color:#eff0f1;"] {
+    background-color: #282828 !important;
+}
+
+/* Ensure line numbers and code inside prettyprint are dark mode friendly */
+.prettyprint.linenums ol.linenums {
+    background-color: #282828 !important; /* Gutter background */
+    color: #888 !important;             /* Line number color */
+}
+
+.prettyprint.linenums ol.linenums li {
+    color: #888 !important;             /* Specific line number color */
+}
+
+code.source-popup-source {
+    background-color: #282828 !important; /* Ensure code background is dark */
+    color: #e0e0e0 !important;           /* Ensure code text is light */
+}
+
+/* Syntax highlighting for prettyprint */
+.prettyprint .com { color: #808080 !important; } /* Comments */
+.prettyprint .str { color: #6a8759 !important; } /* Strings */
+.prettyprint .kwd { color: #cc7832 !important; } /* Keywords */
+.prettyprint .pun { color: #e0e0e0 !important; } /* Punctuation */
+.prettyprint .typ { color: #a9b7c6 !important; } /* Types */
+.prettyprint .lit { color: #6897bb !important; } /* Literals (numbers) */
+.prettyprint .pln { color: #e0e0e0 !important; } /* Plain text */
+
+
+/* Specific Codeforces elements (these might need adjustment based on actual class names) */
+.header, .footer {
+    background-color: #1a1a1a !important;
+}
+
+/* Apply dark background to "lava lamp" hover effect elements */
+li.backLava, li.backLava > div {
+    background-color: #383838 !important; /* Subtle dark grey hover */
+    border-color: #383838 !important;   /* Match border color */
+}
+
+.menu-list a {
+    color: #e0e0e0 !important;
+}
+
+.menu-list a:hover {
+    background-color: #383838 !important; /* Subtle dark grey hover */
+}
+
+.main-info-box {
+    background-color: #282828 !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+/* For contests/problems listings */
+.datatable tr:nth-child(even) td {
+    background-color: #2e2e2e !important;
+}
+
+.datatable tr:nth-child(odd) td {
+    background-color: #242424 !important;
+}
+
+/* For example input/output lines */
+.test-example-line {
+    background-color: #333 !important; /* Slightly darker background for examples */
+    color: #e0e0e0 !important;      /* Light text color */
+}
+
+/* Ensure even lines also get the dark background and light text */
+.test-example-line-even {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+
+/* For user handles (often have colors) - try to maintain contrast */
+.user-red {
+    color: #e74c3c !important; /* Keep original red, but ensure it stands out */
+}
+.user-orange {
+    color: #f39c12 !important;
+}
+.user-violet {
+    color: #9b59b6 !important;
+}
+.user-blue {
+    color: #3498db !important;
+}
+.user-green {
+    color: #2ecc71 !important;
+}
+.user-gray {
+    color: #bdc3c7 !important;
+}
+
+/* General overriding for potential inline styles or other strong selectors */
+/* Verdict colors */
+span.verdict-rejected {
+    color: #e74c3c !important; /* Bright red for rejected verdicts */
+}
+
+/* Dark mode for SVG contribution graph */
+svg rect.day[fill="#EBEDF0"] {
+    fill: #303030 !important; /* Base background for no contributions */
+}
+
+svg rect.day[fill="#91DA9E"] {
+    fill: #2d6f34 !important; /* Darker light green */
+}
+
+svg rect.day[fill="#40C463"] {
+    fill: #398642 !important; /* Darker medium green */
+}
+
+svg rect.day[fill="#30A14E"] {
+    fill: #30A14E !important; /* Keep original dark green */
+}
+
+svg rect.day[fill="#216E39"] {
+    fill: #216E39 !important; /* Keep original very dark green */
+}
+
+/* Ensure text in the SVG is also light */
+svg text.month, svg text.wday {
+    fill: #e0e0e0 !important;
+}
+
+/* Dark mode for alert-error */
+.alert.alert-error {
+    background-color: #800 !important; /* Dark red background */
+    color: #e0e0e0 !important;      /* Light text */
+}
+
+.alert.alert-error a {
+    color: #ffb3b3 !important; /* Light pink/red for links within alert */
+}
+
+.alert.alert-error .infobar-close {
+    color: #e0e0e0 !important; /* Ensure close button is visible */
+}
+
+/* Ace Editor Dark Theme */
+.ace_editor, .ace_content, .ace_text-layer {
+    background-color: #282828 !important; /* Dark background */
+    color: #e0e0e0 !important;           /* Light text */
+}
+
+.ace_print-margin {
+    background-color: #444 !important; /* Darker print margin */
+}
+
+.ace_active-line {
+    background-color: #333 !important; /* Subtle active line highlight */
+}
+
+.ace_cursor {
+    color: #e0e0e0 !important; /* Light cursor */
+}
+
+.ace_selection, .ace_selected-word {
+    background-color: #565656 !important; /* Distinct background for selected text and words */
+}
+
+.ace_gutter-layer {
+    background-color: #212121 !important; /* Dark gutter background */
+    color: #888 !important;              /* Soft grey for line numbers */
+}
+
+.ace_gutter-cell {
+    color: #888 !important;              /* Soft grey for line numbers */
+}
+
+/* Basic syntax highlighting adjustments (common Ace Editor token classes) */
+.ace_keyword {
+    color: #cc7832 !important; /* Orange/brown for keywords */
+}
+
+.ace_string {
+    color: #6a8759 !important; /* Green for strings */
+}
+
+.ace_comment {
+    color: #808080 !important; /* Grey for comments */
+}
+
+.ace_constant.ace_numeric {
+    color: #6897bb !important; /* Blue for numbers */
+}
+
+.ace_variable {
+    color: #a9b7c6 !important; /* Light blue/gray for variables */
+}
+
+.ace_function {
+    color: #ffc66d !important; /* Yellow for function names */
+}
+
+* {
+    color-scheme: dark; /* Hint to browsers to prefer dark styles */
+}
+
+/* Hide the specified element */
+#pageContent > div.second-level-menu > ul > li.backLava {
+    display: none !important;
+}

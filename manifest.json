@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Dark Theme",
+  "version": "1.0",
+  "description": "Applies a dark theme to the Codeforces website.",
+  "icons": {
+    "128": "ico.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/*"],
+      "css": ["dark_theme.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["*://codeforces.com/*"]
+}
