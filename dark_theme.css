@@ -294,3 +294,8 @@ svg text.month, svg text.wday {
 #pageContent > div.second-level-menu > ul > li.backLava {
     display: none !important;
 }
+
+/* Dark theme for the Codeforces sponsored image */
+img[src*="codeforces-sponsored-by-ton.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(0.8);
+}
