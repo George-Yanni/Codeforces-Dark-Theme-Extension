@@ -1,5 +1,7 @@
 # Codeforces Dark Theme
-
+![FSS-](SS00.png)
+![SSS](SS01.png)
+![TSS](SS02.png)
 A browser extension that applies a sleek, eye-friendly dark theme to Codeforces. Ideal for competitive programmers who spend hours on the platform and prefer a darker interface.
 
 ## Features
